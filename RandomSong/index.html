@@ -1,0 +1,57 @@
+<head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Hammersmith+One"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <h2>GENIUS</h2>
+    </div>
+    <div class="row text-center">
+      <h3>RANDOM SONG GENERATOR</h3>
+      <br />
+    </div>
+    <div class="row text-center">
+      <div class="col-xs-6 text-right" id="songImage"></div>
+      <div class="col-xs-6 text-left">
+        <p id="song"></p>
+        <p id="artist"></p>
+        <p id="releaseDate"></p>
+        <button class="button" id="new-song" onclick="newRandomSong()">
+          <span>NEW SONG</span>
+        </button>
+        <br />
+        <button class="button tweet" onclick="tweetSong()">
+          <span>TWEET SONG <i class="fa fa-twitter"></i></span>
+        </button>
+      </div>
+    </div>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/ridBO5gRpSM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <div class="container">
+      <div id="player"></div>
+    </div>
+    <!--<div class="row text-center">
+    <button class="button" onclick="newRandomSong()"><span>NEW SONG</span></button>
+  </div>-->
+  </div>
+  <div id="videoFrame"></div>
+  <div id="search-container"></div>
+  <script src="https://www.gstatic.com/external_hosted/jquery2.min.js"></script>
+  <!-- <script src="js/auth.js"></script>
+  <script src="js/search.js"></script> -->
+  <!-- <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script> -->
+
+  <script src="https://www.youtube.com/player_api"></script>
+  <script src="js/index.js"></script>
+</body>
